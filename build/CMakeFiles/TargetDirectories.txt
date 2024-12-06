@@ -8,5 +8,6 @@
 /home/curry/myRPC/myRPC/build/example/callee/CMakeFiles/provider.dir
 /home/curry/myRPC/myRPC/build/example/callee/CMakeFiles/edit_cache.dir
 /home/curry/myRPC/myRPC/build/example/callee/CMakeFiles/rebuild_cache.dir
+/home/curry/myRPC/myRPC/build/example/caller/CMakeFiles/consumer.dir
 /home/curry/myRPC/myRPC/build/example/caller/CMakeFiles/edit_cache.dir
 /home/curry/myRPC/myRPC/build/example/caller/CMakeFiles/rebuild_cache.dir

@@ -116,6 +116,68 @@ depend:
 	cd /home/curry/myRPC/myRPC/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+example/caller/CMakeFiles/consumer.dir/rule:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/caller/CMakeFiles/consumer.dir/rule
+.PHONY : example/caller/CMakeFiles/consumer.dir/rule
+
+# Convenience name for target.
+consumer: example/caller/CMakeFiles/consumer.dir/rule
+.PHONY : consumer
+
+# fast build rule for target.
+consumer/fast:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/consumer.dir/build.make example/caller/CMakeFiles/consumer.dir/build
+.PHONY : consumer/fast
+
+__/user.pb.o: __/user.pb.cc.o
+.PHONY : __/user.pb.o
+
+# target to build an object file
+__/user.pb.cc.o:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/consumer.dir/build.make example/caller/CMakeFiles/consumer.dir/__/user.pb.cc.o
+.PHONY : __/user.pb.cc.o
+
+__/user.pb.i: __/user.pb.cc.i
+.PHONY : __/user.pb.i
+
+# target to preprocess a source file
+__/user.pb.cc.i:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/consumer.dir/build.make example/caller/CMakeFiles/consumer.dir/__/user.pb.cc.i
+.PHONY : __/user.pb.cc.i
+
+__/user.pb.s: __/user.pb.cc.s
+.PHONY : __/user.pb.s
+
+# target to generate assembly for a file
+__/user.pb.cc.s:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/consumer.dir/build.make example/caller/CMakeFiles/consumer.dir/__/user.pb.cc.s
+.PHONY : __/user.pb.cc.s
+
+calluserservice.o: calluserservice.cc.o
+.PHONY : calluserservice.o
+
+# target to build an object file
+calluserservice.cc.o:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/consumer.dir/build.make example/caller/CMakeFiles/consumer.dir/calluserservice.cc.o
+.PHONY : calluserservice.cc.o
+
+calluserservice.i: calluserservice.cc.i
+.PHONY : calluserservice.i
+
+# target to preprocess a source file
+calluserservice.cc.i:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/consumer.dir/build.make example/caller/CMakeFiles/consumer.dir/calluserservice.cc.i
+.PHONY : calluserservice.cc.i
+
+calluserservice.s: calluserservice.cc.s
+.PHONY : calluserservice.s
+
+# target to generate assembly for a file
+calluserservice.cc.s:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/consumer.dir/build.make example/caller/CMakeFiles/consumer.dir/calluserservice.cc.s
+.PHONY : calluserservice.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +186,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... consumer"
+	@echo "... __/user.pb.o"
+	@echo "... __/user.pb.i"
+	@echo "... __/user.pb.s"
+	@echo "... calluserservice.o"
+	@echo "... calluserservice.i"
+	@echo "... calluserservice.s"
 .PHONY : help
 
 

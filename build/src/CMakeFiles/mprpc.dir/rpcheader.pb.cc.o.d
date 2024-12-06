@@ -1,6 +1,7 @@
 src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o: \
  /home/curry/myRPC/myRPC/src/rpcheader.pb.cc /usr/include/stdc-predef.h \
- /home/curry/myRPC/myRPC/src/rpcheader.pb.h /usr/include/c++/11/limits \
+ /home/curry/myRPC/myRPC/src/include/rpcheader.pb.h \
+ /usr/include/c++/11/limits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

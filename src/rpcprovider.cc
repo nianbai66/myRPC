@@ -89,9 +89,6 @@ void RpcProvider::Run()
 }
 
 
-
-
-
 //新的socket连接回调
 void RpcProvider::OnConnection(const muduo::net::TcpConnectionPtr& conn)
 {
@@ -100,6 +97,7 @@ void RpcProvider::OnConnection(const muduo::net::TcpConnectionPtr& conn)
         //和rpcclient的链接断开了,关闭socket得fd
         conn->shutdown();
     }
+    //std::cout<<"还在连接"<<std::endl;
 }
 
 
@@ -199,7 +197,7 @@ void RpcProvider::OnMessge(const muduo::net::TcpConnectionPtr &conn,
     //在框架上根据远端rpc请求，调用当前rpc节点上发布的方法
 
     //相当于UserService调用了Login方法
-    //userservice().login()；框架里调用服务方得方法
+    //userservice().login()；框架里调用服务方得方法,protobuf生成得服务类，中得rpc方法有几个，就通过method（每个方法描述）得下标选择第几个方法
     service->CallMethod(method,nullptr,request,response,done);
 }
 

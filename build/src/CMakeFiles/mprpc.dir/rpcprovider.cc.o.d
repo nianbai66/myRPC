@@ -324,7 +324,7 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /usr/include/muduo/net/TimerId.h \
  /home/curry/myRPC/myRPC/src/include/mprpcapplication.h \
  /home/curry/myRPC/myRPC/src/include/mprpcconfig.h \
- /home/curry/myRPC/myRPC/src/rpcheader.pb.h \
+ /home/curry/myRPC/myRPC/src/include/rpcheader.pb.h \
  /usr/include/google/protobuf/io/coded_stream.h \
  /usr/include/c++/11/climits /usr/include/google/protobuf/stubs/logging.h \
  /usr/include/google/protobuf/stubs/strutil.h \
