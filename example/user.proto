@@ -4,7 +4,7 @@ package RPC;
 //生成service类必须的
 option cc_generic_services=true;
 //错误码类
-message ResultCode
+message UserResultCode
 {
     int32 errcode=1;
     bytes errmsg=2;
@@ -18,7 +18,7 @@ message LoginRequest
 //登录响应类
 message LoginResponse
 {
-    ResultCode reslut=1;
+    UserResultCode reslut=1;
     bool success=2;
 }
 //注册请求
@@ -31,7 +31,7 @@ message RegisterRequest
 //注册响应
 message RegisterResponse
 {
-    ResultCode result=1;
+    UserResultCode result=1;
     bool success=2;
 }
 //RPC函数

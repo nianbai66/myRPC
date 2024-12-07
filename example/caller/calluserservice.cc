@@ -1,6 +1,7 @@
 #include<iostream>
 #include"mprpcapplication.h"
 #include"user.pb.h"
+#include"friend.pb.h"
 #include"mprpcchannel.h"
 
 int main(int argc,char **argv)
@@ -10,17 +11,24 @@ int main(int argc,char **argv)
 
     //演示调用远程发布的rpc方法Login
     RPC::UserServiceRpc_Stub stub(new MprpcChannel);
+    RPC::FriendServiceRpc_Stub firendstub(new MprpcChannel);
 
     //rpc方法的请求参数
     RPC::LoginRequest request;
     request.set_name("zhangsan");
     request.set_pwd("123");
+    RPC::GetFriendListRequest firendrequest;
+    firendrequest.set_userid(1000);
 
     //rpc方法的响应
     RPC::LoginResponse response;
     //发起rpc方法的调用，同步的rpc调用过程，MprpcChannel::callmethod
     stub.Login(nullptr,&request,&response,nullptr);
     //stub.Login();//RpcChannel->RpcChannel::callMethod 集中来做所有rpc方法调用的参数序列化和网络发送
+
+    RPC::GetFriendListResponse friendresponse;
+    //发起rpc方法的调用，同步的rpc调用过程，MprpcChannel::callmethod
+    firendstub.GetFriendList(nullptr,&firendrequest,&friendresponse,nullptr);
 
     //一次rpc调用完成，读取调用的结果
     if(0==response.reslut().errcode())
@@ -32,7 +40,20 @@ int main(int argc,char **argv)
         std::cout<<"rpc login response error:"<<response.reslut().errmsg()<<std::endl;
     }
 
-
+    //一次rpc调用完成，读取调用的结果
+    if(0==friendresponse.result().errcode())
+    {
+        std::cout<<"rpc GetFriendList response: success!"<<std::endl;
+        int size=friendresponse.friends_size();
+        for(int i=0;i<size;++i)
+            {
+                std::cout<<"index: "<<(i+1)<<" name:"<<friendresponse.friends(i)<<std::endl;
+            }
+    }
+    else
+    {
+        std::cout<<"rpc GetFriendList response error:"<<friendresponse.result().errmsg()<<std::endl;
+    }
 
     //演示RPC的register方法
     RPC::RegisterRequest req;

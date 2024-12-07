@@ -50,22 +50,22 @@ public:
 
 };
 
-//框架发布rpc服务节点
-int main(int argc,char **argv){
-    //先调用框架的初始化操作 provider -i config.conf，从init方法读取配置服务，比如IP地址和端口号,
-    //从test.conf读取ip地址
-    MprpcApplication::Init(argc,argv);
-    //创建一个服务提供者
-    RpcProvider provider;
-    //把userservice对象发布到RPC服务提供者节点上,这个节点必须有个服务对象，可能是user服务or注册服务等，所以基类指针可以接收子类对象
-    //将这个服务得方法注册到一个表中
-    provider.NotifyService(new FriendService());
+// //框架发布rpc服务节点
+// int main(int argc,char **argv){
+//     //先调用框架的初始化操作 provider -i config.conf，从init方法读取配置服务，比如IP地址和端口号,
+//     //从test.conf读取ip地址
+//     MprpcApplication::Init(argc,argv);
+//     //创建一个服务提供者
+//     RpcProvider provider;
+//     //把userservice对象发布到RPC服务提供者节点上,这个节点必须有个服务对象，可能是user服务or注册服务等，所以基类指针可以接收子类对象
+//     //将这个服务得方法注册到一个表中
+//     provider.NotifyService(new FriendService());
 
-    //启动一个rpc服务发布节点，run以后，进程进入阻塞状态，等待远程的rpc请求
-    //使用muduo网络库,绑定自己得连接，通信，回调函数
-    provider.Run();
+//     //启动一个rpc服务发布节点，run以后，进程进入阻塞状态，等待远程的rpc请求
+//     //使用muduo网络库,绑定自己得连接，通信，回调函数
+//     provider.Run();
     
-    return 0;
+//     return 0;
 
 
-}
+// }

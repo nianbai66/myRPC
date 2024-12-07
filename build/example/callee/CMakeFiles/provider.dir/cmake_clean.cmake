@@ -3,8 +3,10 @@ file(REMOVE_RECURSE
   "../../../bin/provider.pdb"
   "CMakeFiles/provider.dir/__/friend.pb.cc.o"
   "CMakeFiles/provider.dir/__/friend.pb.cc.o.d"
-  "CMakeFiles/provider.dir/friendservice.cc.o"
-  "CMakeFiles/provider.dir/friendservice.cc.o.d"
+  "CMakeFiles/provider.dir/__/user.pb.cc.o"
+  "CMakeFiles/provider.dir/__/user.pb.cc.o.d"
+  "CMakeFiles/provider.dir/userservice.cc.o"
+  "CMakeFiles/provider.dir/userservice.cc.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

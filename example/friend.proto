@@ -4,7 +4,7 @@ package RPC;
 //生成service类必须的
 option cc_generic_services=true;
 //错误码类
-message ResultCode
+message FriendResultCode
 {
     int32 errcode=1;
     bytes errmsg=2;
@@ -19,7 +19,7 @@ message GetFriendListRequest
 //注册响应
 message GetFriendListResponse
 {
-    ResultCode result=1;
+    FriendResultCode result=1;
     repeated bytes friends=2;
 }
 //RPC函数

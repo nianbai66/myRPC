@@ -56,42 +56,42 @@ struct TableStruct_friend_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_friend_2eproto;
 namespace RPC {
+class FriendResultCode;
+class FriendResultCodeDefaultTypeInternal;
+extern FriendResultCodeDefaultTypeInternal _FriendResultCode_default_instance_;
 class GetFriendListRequest;
 class GetFriendListRequestDefaultTypeInternal;
 extern GetFriendListRequestDefaultTypeInternal _GetFriendListRequest_default_instance_;
 class GetFriendListResponse;
 class GetFriendListResponseDefaultTypeInternal;
 extern GetFriendListResponseDefaultTypeInternal _GetFriendListResponse_default_instance_;
-class ResultCode;
-class ResultCodeDefaultTypeInternal;
-extern ResultCodeDefaultTypeInternal _ResultCode_default_instance_;
 }  // namespace RPC
 PROTOBUF_NAMESPACE_OPEN
+template<> ::RPC::FriendResultCode* Arena::CreateMaybeMessage<::RPC::FriendResultCode>(Arena*);
 template<> ::RPC::GetFriendListRequest* Arena::CreateMaybeMessage<::RPC::GetFriendListRequest>(Arena*);
 template<> ::RPC::GetFriendListResponse* Arena::CreateMaybeMessage<::RPC::GetFriendListResponse>(Arena*);
-template<> ::RPC::ResultCode* Arena::CreateMaybeMessage<::RPC::ResultCode>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace RPC {
 
 // ===================================================================
 
-class ResultCode PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:RPC.ResultCode) */ {
+class FriendResultCode PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:RPC.FriendResultCode) */ {
  public:
-  inline ResultCode() : ResultCode(nullptr) {};
-  virtual ~ResultCode();
+  inline FriendResultCode() : FriendResultCode(nullptr) {};
+  virtual ~FriendResultCode();
 
-  ResultCode(const ResultCode& from);
-  ResultCode(ResultCode&& from) noexcept
-    : ResultCode() {
+  FriendResultCode(const FriendResultCode& from);
+  FriendResultCode(FriendResultCode&& from) noexcept
+    : FriendResultCode() {
     *this = ::std::move(from);
   }
 
-  inline ResultCode& operator=(const ResultCode& from) {
+  inline FriendResultCode& operator=(const FriendResultCode& from) {
     CopyFrom(from);
     return *this;
   }
-  inline ResultCode& operator=(ResultCode&& from) noexcept {
+  inline FriendResultCode& operator=(FriendResultCode&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -109,20 +109,20 @@ class ResultCode PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const ResultCode& default_instance();
+  static const FriendResultCode& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const ResultCode* internal_default_instance() {
-    return reinterpret_cast<const ResultCode*>(
-               &_ResultCode_default_instance_);
+  static inline const FriendResultCode* internal_default_instance() {
+    return reinterpret_cast<const FriendResultCode*>(
+               &_FriendResultCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     0;
 
-  friend void swap(ResultCode& a, ResultCode& b) {
+  friend void swap(FriendResultCode& a, FriendResultCode& b) {
     a.Swap(&b);
   }
-  inline void Swap(ResultCode* other) {
+  inline void Swap(FriendResultCode* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -130,7 +130,7 @@ class ResultCode PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(ResultCode* other) {
+  void UnsafeArenaSwap(FriendResultCode* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -138,17 +138,17 @@ class ResultCode PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline ResultCode* New() const final {
-    return CreateMaybeMessage<ResultCode>(nullptr);
+  inline FriendResultCode* New() const final {
+    return CreateMaybeMessage<FriendResultCode>(nullptr);
   }
 
-  ResultCode* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<ResultCode>(arena);
+  FriendResultCode* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<FriendResultCode>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const ResultCode& from);
-  void MergeFrom(const ResultCode& from);
+  void CopyFrom(const FriendResultCode& from);
+  void MergeFrom(const FriendResultCode& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -162,13 +162,13 @@ class ResultCode PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(ResultCode* other);
+  void InternalSwap(FriendResultCode* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "RPC.ResultCode";
+    return "RPC.FriendResultCode";
   }
   protected:
-  explicit ResultCode(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit FriendResultCode(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -225,7 +225,7 @@ class ResultCode PROTOBUF_FINAL :
   void _internal_set_errcode(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:RPC.ResultCode)
+  // @@protoc_insertion_point(class_scope:RPC.FriendResultCode)
  private:
   class _Internal;
 
@@ -516,23 +516,23 @@ class GetFriendListResponse PROTOBUF_FINAL :
   std::string* _internal_add_friends();
   public:
 
-  // .RPC.ResultCode result = 1;
+  // .RPC.FriendResultCode result = 1;
   bool has_result() const;
   private:
   bool _internal_has_result() const;
   public:
   void clear_result();
-  const ::RPC::ResultCode& result() const;
-  ::RPC::ResultCode* release_result();
-  ::RPC::ResultCode* mutable_result();
-  void set_allocated_result(::RPC::ResultCode* result);
+  const ::RPC::FriendResultCode& result() const;
+  ::RPC::FriendResultCode* release_result();
+  ::RPC::FriendResultCode* mutable_result();
+  void set_allocated_result(::RPC::FriendResultCode* result);
   private:
-  const ::RPC::ResultCode& _internal_result() const;
-  ::RPC::ResultCode* _internal_mutable_result();
+  const ::RPC::FriendResultCode& _internal_result() const;
+  ::RPC::FriendResultCode* _internal_mutable_result();
   public:
   void unsafe_arena_set_allocated_result(
-      ::RPC::ResultCode* result);
-  ::RPC::ResultCode* unsafe_arena_release_result();
+      ::RPC::FriendResultCode* result);
+  ::RPC::FriendResultCode* unsafe_arena_release_result();
 
   // @@protoc_insertion_point(class_scope:RPC.GetFriendListResponse)
  private:
@@ -542,7 +542,7 @@ class GetFriendListResponse PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string> friends_;
-  ::RPC::ResultCode* result_;
+  ::RPC::FriendResultCode* result_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_friend_2eproto;
 };
@@ -614,80 +614,80 @@ class FriendServiceRpc_Stub : public FriendServiceRpc {
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
-// ResultCode
+// FriendResultCode
 
 // int32 errcode = 1;
-inline void ResultCode::clear_errcode() {
+inline void FriendResultCode::clear_errcode() {
   errcode_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 ResultCode::_internal_errcode() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 FriendResultCode::_internal_errcode() const {
   return errcode_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 ResultCode::errcode() const {
-  // @@protoc_insertion_point(field_get:RPC.ResultCode.errcode)
+inline ::PROTOBUF_NAMESPACE_ID::int32 FriendResultCode::errcode() const {
+  // @@protoc_insertion_point(field_get:RPC.FriendResultCode.errcode)
   return _internal_errcode();
 }
-inline void ResultCode::_internal_set_errcode(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void FriendResultCode::_internal_set_errcode(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   errcode_ = value;
 }
-inline void ResultCode::set_errcode(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void FriendResultCode::set_errcode(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_errcode(value);
-  // @@protoc_insertion_point(field_set:RPC.ResultCode.errcode)
+  // @@protoc_insertion_point(field_set:RPC.FriendResultCode.errcode)
 }
 
 // bytes errmsg = 2;
-inline void ResultCode::clear_errmsg() {
+inline void FriendResultCode::clear_errmsg() {
   errmsg_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
 }
-inline const std::string& ResultCode::errmsg() const {
-  // @@protoc_insertion_point(field_get:RPC.ResultCode.errmsg)
+inline const std::string& FriendResultCode::errmsg() const {
+  // @@protoc_insertion_point(field_get:RPC.FriendResultCode.errmsg)
   return _internal_errmsg();
 }
-inline void ResultCode::set_errmsg(const std::string& value) {
+inline void FriendResultCode::set_errmsg(const std::string& value) {
   _internal_set_errmsg(value);
-  // @@protoc_insertion_point(field_set:RPC.ResultCode.errmsg)
+  // @@protoc_insertion_point(field_set:RPC.FriendResultCode.errmsg)
 }
-inline std::string* ResultCode::mutable_errmsg() {
-  // @@protoc_insertion_point(field_mutable:RPC.ResultCode.errmsg)
+inline std::string* FriendResultCode::mutable_errmsg() {
+  // @@protoc_insertion_point(field_mutable:RPC.FriendResultCode.errmsg)
   return _internal_mutable_errmsg();
 }
-inline const std::string& ResultCode::_internal_errmsg() const {
+inline const std::string& FriendResultCode::_internal_errmsg() const {
   return errmsg_.Get();
 }
-inline void ResultCode::_internal_set_errmsg(const std::string& value) {
+inline void FriendResultCode::_internal_set_errmsg(const std::string& value) {
   
   errmsg_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value, GetArena());
 }
-inline void ResultCode::set_errmsg(std::string&& value) {
+inline void FriendResultCode::set_errmsg(std::string&& value) {
   
   errmsg_.Set(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArena());
-  // @@protoc_insertion_point(field_set_rvalue:RPC.ResultCode.errmsg)
+  // @@protoc_insertion_point(field_set_rvalue:RPC.FriendResultCode.errmsg)
 }
-inline void ResultCode::set_errmsg(const char* value) {
+inline void FriendResultCode::set_errmsg(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
   errmsg_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArena());
-  // @@protoc_insertion_point(field_set_char:RPC.ResultCode.errmsg)
+  // @@protoc_insertion_point(field_set_char:RPC.FriendResultCode.errmsg)
 }
-inline void ResultCode::set_errmsg(const void* value,
+inline void FriendResultCode::set_errmsg(const void* value,
     size_t size) {
   
   errmsg_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArena());
-  // @@protoc_insertion_point(field_set_pointer:RPC.ResultCode.errmsg)
+  // @@protoc_insertion_point(field_set_pointer:RPC.FriendResultCode.errmsg)
 }
-inline std::string* ResultCode::_internal_mutable_errmsg() {
+inline std::string* FriendResultCode::_internal_mutable_errmsg() {
   
   return errmsg_.Mutable(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
 }
-inline std::string* ResultCode::release_errmsg() {
-  // @@protoc_insertion_point(field_release:RPC.ResultCode.errmsg)
+inline std::string* FriendResultCode::release_errmsg() {
+  // @@protoc_insertion_point(field_release:RPC.FriendResultCode.errmsg)
   return errmsg_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
 }
-inline void ResultCode::set_allocated_errmsg(std::string* errmsg) {
+inline void FriendResultCode::set_allocated_errmsg(std::string* errmsg) {
   if (errmsg != nullptr) {
     
   } else {
@@ -695,16 +695,16 @@ inline void ResultCode::set_allocated_errmsg(std::string* errmsg) {
   }
   errmsg_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), errmsg,
       GetArena());
-  // @@protoc_insertion_point(field_set_allocated:RPC.ResultCode.errmsg)
+  // @@protoc_insertion_point(field_set_allocated:RPC.FriendResultCode.errmsg)
 }
-inline std::string* ResultCode::unsafe_arena_release_errmsg() {
-  // @@protoc_insertion_point(field_unsafe_arena_release:RPC.ResultCode.errmsg)
+inline std::string* FriendResultCode::unsafe_arena_release_errmsg() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:RPC.FriendResultCode.errmsg)
   GOOGLE_DCHECK(GetArena() != nullptr);
   
   return errmsg_.UnsafeArenaRelease(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       GetArena());
 }
-inline void ResultCode::unsafe_arena_set_allocated_errmsg(
+inline void FriendResultCode::unsafe_arena_set_allocated_errmsg(
     std::string* errmsg) {
   GOOGLE_DCHECK(GetArena() != nullptr);
   if (errmsg != nullptr) {
@@ -714,7 +714,7 @@ inline void ResultCode::unsafe_arena_set_allocated_errmsg(
   }
   errmsg_.UnsafeArenaSetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       errmsg, GetArena());
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:RPC.ResultCode.errmsg)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:RPC.FriendResultCode.errmsg)
 }
 
 // -------------------------------------------------------------------
@@ -745,7 +745,7 @@ inline void GetFriendListRequest::set_userid(::PROTOBUF_NAMESPACE_ID::uint32 val
 
 // GetFriendListResponse
 
-// .RPC.ResultCode result = 1;
+// .RPC.FriendResultCode result = 1;
 inline bool GetFriendListResponse::_internal_has_result() const {
   return this != internal_default_instance() && result_ != nullptr;
 }
@@ -758,17 +758,17 @@ inline void GetFriendListResponse::clear_result() {
   }
   result_ = nullptr;
 }
-inline const ::RPC::ResultCode& GetFriendListResponse::_internal_result() const {
-  const ::RPC::ResultCode* p = result_;
-  return p != nullptr ? *p : *reinterpret_cast<const ::RPC::ResultCode*>(
-      &::RPC::_ResultCode_default_instance_);
+inline const ::RPC::FriendResultCode& GetFriendListResponse::_internal_result() const {
+  const ::RPC::FriendResultCode* p = result_;
+  return p != nullptr ? *p : *reinterpret_cast<const ::RPC::FriendResultCode*>(
+      &::RPC::_FriendResultCode_default_instance_);
 }
-inline const ::RPC::ResultCode& GetFriendListResponse::result() const {
+inline const ::RPC::FriendResultCode& GetFriendListResponse::result() const {
   // @@protoc_insertion_point(field_get:RPC.GetFriendListResponse.result)
   return _internal_result();
 }
 inline void GetFriendListResponse::unsafe_arena_set_allocated_result(
-    ::RPC::ResultCode* result) {
+    ::RPC::FriendResultCode* result) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(result_);
   }
@@ -780,33 +780,33 @@ inline void GetFriendListResponse::unsafe_arena_set_allocated_result(
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:RPC.GetFriendListResponse.result)
 }
-inline ::RPC::ResultCode* GetFriendListResponse::release_result() {
+inline ::RPC::FriendResultCode* GetFriendListResponse::release_result() {
   auto temp = unsafe_arena_release_result();
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::RPC::ResultCode* GetFriendListResponse::unsafe_arena_release_result() {
+inline ::RPC::FriendResultCode* GetFriendListResponse::unsafe_arena_release_result() {
   // @@protoc_insertion_point(field_release:RPC.GetFriendListResponse.result)
   
-  ::RPC::ResultCode* temp = result_;
+  ::RPC::FriendResultCode* temp = result_;
   result_ = nullptr;
   return temp;
 }
-inline ::RPC::ResultCode* GetFriendListResponse::_internal_mutable_result() {
+inline ::RPC::FriendResultCode* GetFriendListResponse::_internal_mutable_result() {
   
   if (result_ == nullptr) {
-    auto* p = CreateMaybeMessage<::RPC::ResultCode>(GetArena());
+    auto* p = CreateMaybeMessage<::RPC::FriendResultCode>(GetArena());
     result_ = p;
   }
   return result_;
 }
-inline ::RPC::ResultCode* GetFriendListResponse::mutable_result() {
+inline ::RPC::FriendResultCode* GetFriendListResponse::mutable_result() {
   // @@protoc_insertion_point(field_mutable:RPC.GetFriendListResponse.result)
   return _internal_mutable_result();
 }
-inline void GetFriendListResponse::set_allocated_result(::RPC::ResultCode* result) {
+inline void GetFriendListResponse::set_allocated_result(::RPC::FriendResultCode* result) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete result_;
