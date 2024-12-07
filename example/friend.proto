@@ -9,34 +9,21 @@ message ResultCode
     int32 errcode=1;
     bytes errmsg=2;
 }
-//登录请求类
-message LoginRequest
-{
-    bytes name=1;
-    bytes pwd=2;
-}
-//登录响应类
-message LoginResponse
-{
-    ResultCode reslut=1;
-    bool success=2;
-}
+
 //注册请求
-message RegisterRequest
+message GetFriendListRequest
 {
-    uint32 id=1;
-    bytes name=2;
-    bytes pwd=3;
+    uint32 userid=1;
+    
 }
 //注册响应
-message RegisterResponse
+message GetFriendListResponse
 {
     ResultCode result=1;
-    bool success=2;
+    repeated bytes friends=2;
 }
 //RPC函数
-service UserServiceRpc
+service FriendServiceRpc
 {
-    rpc Login(LoginRequest)returns(LoginResponse);
-    rpc Register(RegisterRequest)returns(RegisterResponse);
+    rpc GetFriendList(GetFriendListRequest)returns(GetFriendListResponse);
 }

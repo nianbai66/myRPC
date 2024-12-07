@@ -187,7 +187,8 @@ void RpcProvider::OnMessge(const muduo::net::TcpConnectionPtr &conn,
         std::cout<<"request parse error,content:"<<args_str<<std::endl;
         return;
     }
-
+    std::cout<<"args_str: "<<args_str<<std::endl;
+    
     google::protobuf::Message *response = service->GetResponsePrototype(method).New();//生成一个新对象
 
     //给下面的method方法的调用，绑定一个Closure的回调函数，因为模板的实参推演失败，所以需要指定类型
