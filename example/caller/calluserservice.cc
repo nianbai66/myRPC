@@ -32,25 +32,27 @@ int main(int argc,char **argv)
         std::cout<<"rpc login response error:"<<response.reslut().errmsg()<<std::endl;
     }
 
-    // //演示RPC的register方法
-    // RPC::RegisterRequest req;
-    // req.set_id(2000);
-    // req.set_name("mprpc");
-    // req.set_pwd("666666");
-    // RPC::RegisterResponse rsp;
-    
-    // //以同步的方式发起RPC请求，等待返回结果
-    // stub.Register(nullptr,&req,&rsp,nullptr);
 
-    // //一次rpc调用完成，读取调用的结果
-    // if(0==rsp.result().errcode())
-    // {
-    //     std::cout<<"rpc login response:"<<rsp.success()<<std::endl;
-    // }
-    // else
-    // {
-    //     std::cout<<"rpc login response error:"<<rsp.result().errmsg()<<std::endl;
-    // }
+
+    //演示RPC的register方法
+    RPC::RegisterRequest req;
+    req.set_id(2000);
+    req.set_name("mprpc");
+    req.set_pwd("666666");
+    RPC::RegisterResponse rsp;
+    //
+    stub.Register(nullptr , &req , &rsp , nullptr);
+    
+    //一次rpc调用完成，读取调用的结果
+    if(0==rsp.result().errcode())
+    {
+        std::cout<<"rpc register response:"<<rsp.success()<<std::endl;
+    }
+    else
+    {
+        std::cout<<"rpc register response error:"<<rsp.result().errmsg()<<std::endl;
+    }
+   
 
     return 0;
 }

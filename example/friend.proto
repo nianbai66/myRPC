@@ -1,0 +1,42 @@
+syntax ="proto3";
+//创建rpc命名空间
+package RPC;
+//生成service类必须的
+option cc_generic_services=true;
+//错误码类
+message ResultCode
+{
+    int32 errcode=1;
+    bytes errmsg=2;
+}
+//登录请求类
+message LoginRequest
+{
+    bytes name=1;
+    bytes pwd=2;
+}
+//登录响应类
+message LoginResponse
+{
+    ResultCode reslut=1;
+    bool success=2;
+}
+//注册请求
+message RegisterRequest
+{
+    uint32 id=1;
+    bytes name=2;
+    bytes pwd=3;
+}
+//注册响应
+message RegisterResponse
+{
+    ResultCode result=1;
+    bool success=2;
+}
+//RPC函数
+service UserServiceRpc
+{
+    rpc Login(LoginRequest)returns(LoginResponse);
+    rpc Register(RegisterRequest)returns(RegisterResponse);
+}

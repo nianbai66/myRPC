@@ -16,9 +16,17 @@ public:
     bool Login(std::string name,std::string pwd)
     {
         std::cout<<"doing local service:Login"<<std::endl;
-        std::cout<<"name:"<<name<<" pwd"<<pwd<<std::endl;
+        std::cout<<"name:"<<name<<" pwd:"<<pwd<<std::endl;
         return true;
     }
+    //本地的注册方法
+    bool Register(uint32_t userid,std::string name,std::string pwd)
+    {
+        std::cout<<"doing local service:Register"<<std::endl;
+        std::cout<<"userid:"<<userid<<"name:"<<name<<" pwd:"<<pwd<<std::endl;
+        return true;
+    }
+
     /*
     重写基类UserServiceRpc的虚函数，框架调用这个重写的登录函数
     1.caller远程调用者发起远程调用请求Login(LoginRequest)=>muduo=>callee
@@ -50,6 +58,26 @@ public:
         //执行回调操作  执行响应对象数据的序列化和网络发送
         done->Run();
     }
+    void Register(::google::protobuf::RpcController* controller,
+                       const ::RPC::RegisterRequest* request,
+                       ::RPC::RegisterResponse* response,
+                       ::google::protobuf::Closure* done){
+        //框架给业务上报了请求参数：LoginRequest，应用程序取出相应的已反序列化的数据来做本地业务
+        std::string name=request->name();
+        std::string pwd=request->pwd();
+        uint32_t id = request->id();
+        //做本地业务
+        bool Registerresult=Register(id,name,pwd);
+        //记录返回值和错误码
+        response->set_success(Registerresult);
+        RPC::ResultCode *registerCode = response->mutable_result();
+        registerCode->set_errcode(0);
+        registerCode->set_errmsg("");
+        //数据反序列化加发送
+        done->Run();
+
+    }
+
 };
 
 //框架发布rpc服务节点
