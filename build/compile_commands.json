@@ -1,0 +1,57 @@
+[
+{
+  "directory": "/home/curry/myRPC/myRPC/build/src",
+  "command": "/usr/bin/g++  -I/home/curry/myRPC/myRPC/src/include -I/home/curry/myRPC/myRPC/example -g -o CMakeFiles/mprpc.dir/logger.cc.o -c /home/curry/myRPC/myRPC/src/logger.cc",
+  "file": "/home/curry/myRPC/myRPC/src/logger.cc"
+},
+{
+  "directory": "/home/curry/myRPC/myRPC/build/src",
+  "command": "/usr/bin/g++  -I/home/curry/myRPC/myRPC/src/include -I/home/curry/myRPC/myRPC/example -g -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /home/curry/myRPC/myRPC/src/mprpcapplication.cc",
+  "file": "/home/curry/myRPC/myRPC/src/mprpcapplication.cc"
+},
+{
+  "directory": "/home/curry/myRPC/myRPC/build/src",
+  "command": "/usr/bin/g++  -I/home/curry/myRPC/myRPC/src/include -I/home/curry/myRPC/myRPC/example -g -o CMakeFiles/mprpc.dir/mprpcchannel.cc.o -c /home/curry/myRPC/myRPC/src/mprpcchannel.cc",
+  "file": "/home/curry/myRPC/myRPC/src/mprpcchannel.cc"
+},
+{
+  "directory": "/home/curry/myRPC/myRPC/build/src",
+  "command": "/usr/bin/g++  -I/home/curry/myRPC/myRPC/src/include -I/home/curry/myRPC/myRPC/example -g -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/curry/myRPC/myRPC/src/mprpcconfig.cc",
+  "file": "/home/curry/myRPC/myRPC/src/mprpcconfig.cc"
+},
+{
+  "directory": "/home/curry/myRPC/myRPC/build/src",
+  "command": "/usr/bin/g++  -I/home/curry/myRPC/myRPC/src/include -I/home/curry/myRPC/myRPC/example -g -o CMakeFiles/mprpc.dir/mprpccontroller.cc.o -c /home/curry/myRPC/myRPC/src/mprpccontroller.cc",
+  "file": "/home/curry/myRPC/myRPC/src/mprpccontroller.cc"
+},
+{
+  "directory": "/home/curry/myRPC/myRPC/build/src",
+  "command": "/usr/bin/g++  -I/home/curry/myRPC/myRPC/src/include -I/home/curry/myRPC/myRPC/example -g -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -c /home/curry/myRPC/myRPC/src/rpcheader.pb.cc",
+  "file": "/home/curry/myRPC/myRPC/src/rpcheader.pb.cc"
+},
+{
+  "directory": "/home/curry/myRPC/myRPC/build/src",
+  "command": "/usr/bin/g++  -I/home/curry/myRPC/myRPC/src/include -I/home/curry/myRPC/myRPC/example -g -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/curry/myRPC/myRPC/src/rpcprovider.cc",
+  "file": "/home/curry/myRPC/myRPC/src/rpcprovider.cc"
+},
+{
+  "directory": "/home/curry/myRPC/myRPC/build/example/callee",
+  "command": "/usr/bin/g++  -I/home/curry/myRPC/myRPC/src/include -I/home/curry/myRPC/myRPC/example -g -o CMakeFiles/provider.dir/friendservice.cc.o -c /home/curry/myRPC/myRPC/example/callee/friendservice.cc",
+  "file": "/home/curry/myRPC/myRPC/example/callee/friendservice.cc"
+},
+{
+  "directory": "/home/curry/myRPC/myRPC/build/example/callee",
+  "command": "/usr/bin/g++  -I/home/curry/myRPC/myRPC/src/include -I/home/curry/myRPC/myRPC/example -g -o CMakeFiles/provider.dir/__/friend.pb.cc.o -c /home/curry/myRPC/myRPC/example/friend.pb.cc",
+  "file": "/home/curry/myRPC/myRPC/example/friend.pb.cc"
+},
+{
+  "directory": "/home/curry/myRPC/myRPC/build/example/caller",
+  "command": "/usr/bin/g++  -I/home/curry/myRPC/myRPC/src/include -I/home/curry/myRPC/myRPC/example -g -o CMakeFiles/consumer.dir/callfriendservice.cc.o -c /home/curry/myRPC/myRPC/example/caller/callfriendservice.cc",
+  "file": "/home/curry/myRPC/myRPC/example/caller/callfriendservice.cc"
+},
+{
+  "directory": "/home/curry/myRPC/myRPC/build/example/caller",
+  "command": "/usr/bin/g++  -I/home/curry/myRPC/myRPC/src/include -I/home/curry/myRPC/myRPC/example -g -o CMakeFiles/consumer.dir/__/friend.pb.cc.o -c /home/curry/myRPC/myRPC/example/friend.pb.cc",
+  "file": "/home/curry/myRPC/myRPC/example/friend.pb.cc"
+}
+]
