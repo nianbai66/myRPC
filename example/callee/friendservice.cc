@@ -6,6 +6,8 @@
 #include"../friend.pb.h"//包含protobuf头文件
 #include "mprpcapplication.h"
 #include "rpcprovider.h"
+#include "logger.h"
+#include<vector>
 
 
 //继承了RPC::UserServiceRpc,就封装成了一个RPC方法
@@ -15,7 +17,8 @@ public:
     //本地的获取好友列表方法
     std::vector<std::string> GetFriendList(uint32_t userid)
     {
-        std::cout<<" do GetFriendList service!"<<std::endl;
+        //std::cout<<""<<std::endl;
+        LOG_INFO(" do GetFriendList service!");
         std::vector<std::string> vec;
         vec.push_back("gao yang");
         vec.push_back("liu hong");
@@ -52,6 +55,9 @@ public:
 
 //框架发布rpc服务节点
 int main(int argc,char **argv){
+
+    LOG_INFO("first log info");
+    //LOG_ERR("%s:%s:%d" , __FILE__ , __FUNCTION__ , __LINE__);
     //先调用框架的初始化操作 provider -i config.conf，从init方法读取配置服务，比如IP地址和端口号,
     //从test.conf读取ip地址
     MprpcApplication::Init(argc,argv);

@@ -3,6 +3,7 @@
 #include"mprpcapplication.h"
 #include<functional>
 #include"rpcheader.pb.h"
+#include"logger.h"
 //#include"zookeeperutil.h"
 
 /*
@@ -23,18 +24,18 @@ void RpcProvider::NotifyService(google::protobuf::Service *service)
     //获取服务对象service的方法数量
     int methodCnt=pserviceDesc->method_count();
 
-    std::cout<<"service name:"<<service_name<<std::endl;//添加日志信息后更改
-    //LOG_INFO("service_name:%s",service_name.c_str());
+    //std::cout<<"service name:"<<service_name<<std::endl;//添加日志信息后更改
+    LOG_INFO("service_name:%s",service_name.c_str());
 
     for(int i=0;i<methodCnt;++i)
     {
         //获取了服务对象指定下标的服务方法的描述（抽象描述）
         const google::protobuf::MethodDescriptor* pmethodDesc=pserviceDesc->method(i);
         std::string method_name=pmethodDesc->name();
-        std::cout<<"method name:"<<method_name<<std::endl;
+        //std::cout<<"method name:"<<method_name<<std::endl;
         //插入服务名字和服务得所有方法得描述
         service_info.m_methodMap.insert({method_name,pmethodDesc});
-        //LOG_INFO("method_name:%s",method_name.c_str());
+        LOG_INFO("method_name:%s",method_name.c_str());
     }
     //可以使用该表来调用方法
     service_info.m_service=service;

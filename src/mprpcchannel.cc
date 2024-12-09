@@ -73,8 +73,9 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     int clientfd=socket(AF_INET,SOCK_STREAM,0);
     if(-1==clientfd)
     {
-        //std::cout<<"create socket error! errno: "<<errno<<std::endl;//改用controller记录错误信息
+        //std::cout<<"create socket error! errno: "<<errno<<std::endl;
         //exit(EXIT_FAILURE);
+        //改用controller记录错误信息
         char errtxt[512]={0};
         sprintf(errtxt,"create socket error! errno: %d",errno);
         controller->SetFailed(errtxt);
@@ -162,7 +163,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     //反序列化rpc调用的响应数据
     //bug点：recv_buf遇到\0后的数据不再读取，导致反序列化失败
     //解决方案：使用string转换时会遇到\0，由于字符串特性导致不再读取，因为protobuf支持从数组转换，所以换方法直接从Array反序列化
-    std::string response_str(recv_buf,0,recv_size);
+    //std::string response_str(recv_buf,0,recv_size);
     //if(!response->ParseFromString(response_str))
     if(!response->ParsePartialFromArray(recv_buf,recv_size))
     {
@@ -170,7 +171,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
         // close(clientfd);
         // return;
         close(clientfd);
-        char errtxt[512]={0};
+        char errtxt[1050]={0};
         sprintf(errtxt,"recv socket error! errno: %s",recv_buf);
         controller->SetFailed(errtxt);
         return;

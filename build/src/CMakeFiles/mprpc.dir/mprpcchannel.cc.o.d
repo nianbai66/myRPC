@@ -288,6 +288,7 @@ src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o: \
  /usr/include/google/protobuf/inlined_string_field.h \
  /usr/include/google/protobuf/extension_set.h /usr/include/c++/11/cassert \
  /home/curry/myRPC/myRPC/src/include/mprpcapplication.h \
+ /home/curry/myRPC/myRPC/src/include/mprpccontroller.h \
  /home/curry/myRPC/myRPC/src/include/mprpcconfig.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \

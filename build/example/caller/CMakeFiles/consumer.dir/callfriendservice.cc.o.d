@@ -147,25 +147,16 @@ example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
  /home/curry/myRPC/myRPC/src/include/mprpcapplication.h \
- /home/curry/myRPC/myRPC/src/include/mprpcconfig.h \
- /usr/include/c++/11/unordered_map \
- /usr/include/c++/11/ext/aligned_buffer.h \
- /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h \
- /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h \
- /home/curry/myRPC/myRPC/example/friend.pb.h /usr/include/c++/11/limits \
+ /home/curry/myRPC/myRPC/src/include/mprpccontroller.h \
+ /usr/include/google/protobuf/service.h \
+ /usr/include/google/protobuf/stubs/callback.h \
+ /usr/include/google/protobuf/stubs/macros.h \
+ /usr/include/google/protobuf/stubs/port.h /usr/include/assert.h \
+ /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstddef \
+ /usr/include/string.h /usr/include/strings.h \
+ /usr/include/google/protobuf/stubs/platform_macros.h \
  /usr/include/google/protobuf/port_def.inc \
- /usr/include/google/protobuf/port_undef.inc \
- /usr/include/google/protobuf/io/coded_stream.h /usr/include/assert.h \
- /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
- /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /usr/include/c++/11/climits \
+ /usr/include/x86_64-linux-gnu/sys/param.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -173,9 +164,7 @@ example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/11/cstddef \
- /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/sys/param.h /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
@@ -206,16 +195,29 @@ example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
  /usr/include/x86_64-linux-gnu/bits/param.h /usr/include/linux/param.h \
  /usr/include/x86_64-linux-gnu/asm/param.h \
- /usr/include/asm-generic/param.h \
+ /usr/include/asm-generic/param.h /usr/include/byteswap.h \
+ /usr/include/google/protobuf/port_undef.inc \
  /usr/include/google/protobuf/stubs/common.h \
- /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /usr/include/c++/11/functional /usr/include/c++/11/bits/refwrap.h \
- /usr/include/c++/11/bits/std_function.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/functional /usr/include/c++/11/tuple \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/unordered_map \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
@@ -231,14 +233,17 @@ example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/ext/concurrence.h \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h /usr/include/c++/11/set \
  /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h \
- /usr/include/google/protobuf/stubs/port.h /usr/include/c++/11/stdlib.h \
- /usr/include/google/protobuf/stubs/platform_macros.h \
- /usr/include/byteswap.h /usr/include/google/protobuf/stubs/macros.h \
- /usr/include/google/protobuf/stubs/logging.h \
+ /home/curry/myRPC/myRPC/src/include/mprpcconfig.h \
+ /home/curry/myRPC/myRPC/example/friend.pb.h /usr/include/c++/11/limits \
+ /usr/include/google/protobuf/io/coded_stream.h \
+ /usr/include/c++/11/atomic /usr/include/c++/11/climits \
+ /usr/include/c++/11/cstring /usr/include/google/protobuf/stubs/logging.h \
  /usr/include/google/protobuf/stubs/strutil.h \
  /usr/include/google/protobuf/stubs/stringpiece.h \
  /usr/include/google/protobuf/stubs/hash.h \
@@ -278,9 +283,15 @@ example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o: \
  /usr/include/google/protobuf/generated_enum_reflection.h \
  /usr/include/google/protobuf/unknown_field_set.h \
  /usr/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
- /usr/include/google/protobuf/stubs/callback.h \
  /usr/include/google/protobuf/stubs/stl_util.h \
  /usr/include/google/protobuf/message.h \
  /usr/include/google/protobuf/extension_set.h /usr/include/c++/11/cassert \
- /usr/include/google/protobuf/service.h \
- /home/curry/myRPC/myRPC/src/include/mprpcchannel.h
+ /home/curry/myRPC/myRPC/src/include/mprpcchannel.h \
+ /home/curry/myRPC/myRPC/src/include/logger.h \
+ /home/curry/myRPC/myRPC/src/include/lockqueue.h \
+ /usr/include/c++/11/queue /usr/include/c++/11/deque \
+ /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
+ /usr/include/c++/11/bits/stl_queue.h /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h \
+ /usr/include/c++/11/condition_variable

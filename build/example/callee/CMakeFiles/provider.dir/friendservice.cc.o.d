@@ -282,6 +282,7 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: \
  /usr/include/google/protobuf/extension_set.h /usr/include/c++/11/cassert \
  /usr/include/google/protobuf/service.h \
  /home/curry/myRPC/myRPC/src/include/mprpcapplication.h \
+ /home/curry/myRPC/myRPC/src/include/mprpccontroller.h \
  /home/curry/myRPC/myRPC/src/include/mprpcconfig.h \
  /home/curry/myRPC/myRPC/src/include/rpcprovider.h \
  /usr/include/muduo/net/TcpServer.h /usr/include/muduo/base/Atomic.h \
@@ -356,4 +357,12 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: \
  /usr/include/boost/core/enable_if.hpp \
  /usr/include/boost/type_traits/is_same.hpp \
  /usr/include/muduo/net/EventLoop.h /usr/include/muduo/base/Mutex.h \
- /usr/include/muduo/base/CurrentThread.h /usr/include/muduo/net/TimerId.h
+ /usr/include/muduo/base/CurrentThread.h /usr/include/muduo/net/TimerId.h \
+ /home/curry/myRPC/myRPC/src/include/logger.h \
+ /home/curry/myRPC/myRPC/src/include/lockqueue.h \
+ /usr/include/c++/11/queue /usr/include/c++/11/deque \
+ /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
+ /usr/include/c++/11/bits/stl_queue.h /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h \
+ /usr/include/c++/11/condition_variable

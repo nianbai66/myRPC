@@ -13,6 +13,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src/include)
 include_directories(${PROJECT_SOURCE_DIR}/example)
 
 #设置项目库文件搜索路径 -L ， 生成的库文件都放在lib里
+
 link_directories(${PROJECT_SOURCE_DIR}/lib)
 
 #在子目录下寻找makefile文件
