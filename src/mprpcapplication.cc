@@ -3,6 +3,7 @@
 #include<unistd.h>
 #include<string>
 
+
 MprpcConfig MprpcApplication::m_config;
 
 MprpcApplication& MprpcApplication::GetInstance()
@@ -14,6 +15,7 @@ MprpcApplication& MprpcApplication::GetInstance()
 void ShowArgHelp()
 {
     std::cout<<"format:command -i <configfile>"<<std::endl;
+    
 }
 void MprpcApplication::Init(int argc,char **argv)
 {
@@ -35,10 +37,12 @@ void MprpcApplication::Init(int argc,char **argv)
             break;
         case '?'://出现了不想要的参数
             std::cout<<"invalid args"<<std::endl;
+            
             ShowArgHelp();
             exit(EXIT_FAILURE);
         case ':':
             std::cout<<"need <configfile>"<<std::endl;
+            
             ShowArgHelp();
             exit(EXIT_FAILURE);
         default:

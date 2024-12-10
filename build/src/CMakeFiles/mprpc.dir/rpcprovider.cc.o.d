@@ -323,6 +323,7 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /usr/include/muduo/base/Mutex.h /usr/include/muduo/base/CurrentThread.h \
  /usr/include/muduo/net/TimerId.h \
  /home/curry/myRPC/myRPC/src/include/mprpcapplication.h \
+ /home/curry/myRPC/myRPC/src/include/mprpccontroller.h \
  /home/curry/myRPC/myRPC/src/include/mprpcconfig.h \
  /home/curry/myRPC/myRPC/src/include/rpcheader.pb.h \
  /usr/include/google/protobuf/io/coded_stream.h \
@@ -360,4 +361,20 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /usr/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
  /usr/include/google/protobuf/stubs/stl_util.h \
  /usr/include/google/protobuf/message.h \
- /usr/include/google/protobuf/extension_set.h /usr/include/c++/11/cassert
+ /usr/include/google/protobuf/extension_set.h /usr/include/c++/11/cassert \
+ /home/curry/myRPC/myRPC/src/include/logger.h \
+ /home/curry/myRPC/myRPC/src/include/lockqueue.h \
+ /usr/include/c++/11/queue /usr/include/c++/11/deque \
+ /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
+ /usr/include/c++/11/bits/stl_queue.h /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h \
+ /usr/include/c++/11/condition_variable \
+ /home/curry/myRPC/myRPC/src/include/zookeeperutil.h \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/local/include/zookeeper/zookeeper.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/local/include/zookeeper/proto.h \
+ /usr/local/include/zookeeper/zookeeper_version.h \
+ /usr/local/include/zookeeper/recordio.h \
+ /usr/local/include/zookeeper/zookeeper.jute.h

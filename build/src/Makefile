@@ -130,6 +130,30 @@ mprpc/fast:
 	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/build
 .PHONY : mprpc/fast
 
+logger.o: logger.cc.o
+.PHONY : logger.o
+
+# target to build an object file
+logger.cc.o:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/logger.cc.o
+.PHONY : logger.cc.o
+
+logger.i: logger.cc.i
+.PHONY : logger.i
+
+# target to preprocess a source file
+logger.cc.i:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/logger.cc.i
+.PHONY : logger.cc.i
+
+logger.s: logger.cc.s
+.PHONY : logger.s
+
+# target to generate assembly for a file
+logger.cc.s:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/logger.cc.s
+.PHONY : logger.cc.s
+
 mprpcapplication.o: mprpcapplication.cc.o
 .PHONY : mprpcapplication.o
 
@@ -202,6 +226,30 @@ mprpcconfig.cc.s:
 	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcconfig.cc.s
 .PHONY : mprpcconfig.cc.s
 
+mprpccontroller.o: mprpccontroller.cc.o
+.PHONY : mprpccontroller.o
+
+# target to build an object file
+mprpccontroller.cc.o:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpccontroller.cc.o
+.PHONY : mprpccontroller.cc.o
+
+mprpccontroller.i: mprpccontroller.cc.i
+.PHONY : mprpccontroller.i
+
+# target to preprocess a source file
+mprpccontroller.cc.i:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpccontroller.cc.i
+.PHONY : mprpccontroller.cc.i
+
+mprpccontroller.s: mprpccontroller.cc.s
+.PHONY : mprpccontroller.s
+
+# target to generate assembly for a file
+mprpccontroller.cc.s:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpccontroller.cc.s
+.PHONY : mprpccontroller.cc.s
+
 rpcheader.pb.o: rpcheader.pb.cc.o
 .PHONY : rpcheader.pb.o
 
@@ -250,6 +298,30 @@ rpcprovider.cc.s:
 	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcprovider.cc.s
 .PHONY : rpcprovider.cc.s
 
+zookeeperutil.o: zookeeperutil.cc.o
+.PHONY : zookeeperutil.o
+
+# target to build an object file
+zookeeperutil.cc.o:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o
+.PHONY : zookeeperutil.cc.o
+
+zookeeperutil.i: zookeeperutil.cc.i
+.PHONY : zookeeperutil.i
+
+# target to preprocess a source file
+zookeeperutil.cc.i:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeperutil.cc.i
+.PHONY : zookeeperutil.cc.i
+
+zookeeperutil.s: zookeeperutil.cc.s
+.PHONY : zookeeperutil.s
+
+# target to generate assembly for a file
+zookeeperutil.cc.s:
+	cd /home/curry/myRPC/myRPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeperutil.cc.s
+.PHONY : zookeeperutil.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -259,6 +331,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... mprpc"
+	@echo "... logger.o"
+	@echo "... logger.i"
+	@echo "... logger.s"
 	@echo "... mprpcapplication.o"
 	@echo "... mprpcapplication.i"
 	@echo "... mprpcapplication.s"
@@ -268,12 +343,18 @@ help:
 	@echo "... mprpcconfig.o"
 	@echo "... mprpcconfig.i"
 	@echo "... mprpcconfig.s"
+	@echo "... mprpccontroller.o"
+	@echo "... mprpccontroller.i"
+	@echo "... mprpccontroller.s"
 	@echo "... rpcheader.pb.o"
 	@echo "... rpcheader.pb.i"
 	@echo "... rpcheader.pb.s"
 	@echo "... rpcprovider.o"
 	@echo "... rpcprovider.i"
 	@echo "... rpcprovider.s"
+	@echo "... zookeeperutil.o"
+	@echo "... zookeeperutil.i"
+	@echo "... zookeeperutil.s"
 .PHONY : help
 
 
