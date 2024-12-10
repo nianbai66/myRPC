@@ -28,8 +28,8 @@ int main(int argc,char **argv)
     //一次rpc调用完成，读取调用的结果
     if(controller.Failed())
     {
-        //std::cout<<controller.ErrorText()<<std::endl;
-        LOG_ERR(controller.ErrorText().c_str());
+        std::cout<<controller.ErrorText()<<std::endl;
+        
 
     }else{
         if(0==response.result().errcode())

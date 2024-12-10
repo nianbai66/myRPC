@@ -1,0 +1,17 @@
+11:23:37 => [info] first log info
+11:23:37 => [info] service_name:FriendServiceRpc
+11:23:37 => [info] method_name:GetFriendList
+11:23:37 => [info]  do GetFriendList service!
+11:23:49 => [info]  do GetFriendList service!
+11:29:30 => [info] first log info
+11:29:30 => [info] service_name:FriendServiceRpc
+11:29:30 => [info] method_name:GetFriendList
+11:32:54 => [info] first log info
+11:32:54 => [info] service_name:FriendServiceRpc
+11:34:6 => [info] first log info
+11:37:3 => [info] first log info
+11:37:3 => [info] service_name:FriendServiceRpc
+11:37:3 => [info] method_name:GetFriendList
+11:37:3 => [info]  do GetFriendList service!
+11:37:20 => [info]  do GetFriendList service!
+11:38:55 => [info] rpc GetFriendList response: success!

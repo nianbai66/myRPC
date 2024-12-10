@@ -4,7 +4,9 @@
 #include<functional>
 #include"rpcheader.pb.h"
 #include"logger.h"
-//#include"zookeeperutil.h"
+#include"zookeeperutil.h"
+
+
 
 /*
 service_name=>对service进行描述
@@ -13,6 +15,7 @@ service_name=>对service进行描述
 */
 //这里是框架提供给外部使用的，可以发布rpc方法的函数接口
 //此处应该使用Service类，而不是指定某个方法
+//将服务名和服务的方法放到map里
 void RpcProvider::NotifyService(google::protobuf::Service *service)
 {
     ServiceInfo service_info;//服务表
@@ -45,9 +48,11 @@ void RpcProvider::NotifyService(google::protobuf::Service *service)
 //启动rpc服务节点，开始提供rpc远程网络调用服务
 void RpcProvider::Run()
 {
+    //从配置文件获取ip和端口
     std::string ip=MprpcApplication::GetInstance().GetConfig().Load("rpcserverip");
     //uint16_t port=atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
     uint16_t port=stoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserverport"));
+
     muduo::net::InetAddress address(ip,port);           //stringip和uint 16端口，ipv6默认false
 
     //创建TcpServer对象
@@ -63,24 +68,24 @@ void RpcProvider::Run()
 
     //把当前rpc节点上要发布的服务全部注册在zk上，让rpc client可以从zk上发现服务
     //session的timeout默认为30s，zkclient的网络I/O线程1/3的timeout内不发送心跳则丢弃此节点
-    // ZkClient zkCli;
-    // zkCli.Start();//链接zkserver
-    // for(auto &sp:m_serviceMap)
-    // {
-    //     //service_name
-    //     std::string service_path ="/"+sp.first;//拼接路径
-    //     zkCli.Create(service_path.c_str(),nullptr,0);//创建临时性节点
-    //     for(auto &mp:sp.second.m_methodMap)
-    //     {
-    //         //service_name/method_name
-    //         std::string method_path=service_path+"/"+mp.first;//拼接服务器路径和方法路径
-    //         char method_path_data[128]={0};
-    //         sprintf(method_path_data,"%s:%d",ip.c_str(),port);//向data中写入路径
+    ZKclient zkCli;
+    zkCli.Start();//链接zkserver服务端
+    for(auto &sp:m_serviceMap)
+    {
+        //service_name
+        std::string service_path ="/"+sp.first;//拼接路径
+        zkCli.Create(service_path.c_str(),nullptr,0);//创建临时性节点,客户端断开连接，则zookeeper不在存有这个服务端的服务和方法节点
+        for(auto &mp:sp.second.m_methodMap)
+        {
+            //service_name/method_name
+            std::string method_path=service_path+"/"+mp.first;//拼接服务器路径和方法路径
+            char method_path_data[128]={0};
+            sprintf(method_path_data,"%s:%d",ip.c_str(),port);//向data中写入ip+port
 
-    //         //创建节点,ZOO_EPHEMERAL表示临时节点
-    //         zkCli.Create(method_path.c_str(),method_path_data,strlen(method_path_data),ZOO_EPHEMERAL);
-    //     }
-    // }
+            //创建节点,ZOO_EPHEMERAL表示临时节点
+            zkCli.Create(method_path.c_str(),method_path_data,strlen(method_path_data),ZOO_EPHEMERAL);
+        }
+    }
 
     std::cout<<"RpcProvider start service at ip:"<<ip<<" port:"<<port<<std::endl;
 

@@ -73,99 +73,113 @@ src/CMakeFiles/mprpc.dir/logger.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/logger.cc.o: ../src/logger.cc
 src/CMakeFiles/mprpc.dir/logger.cc.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/curry/myRPC/myRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/mprpc.dir/logger.cc.o"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/logger.cc.o -MF CMakeFiles/mprpc.dir/logger.cc.o.d -o CMakeFiles/mprpc.dir/logger.cc.o -c /home/curry/myRPC/myRPC/src/logger.cc
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/logger.cc.o -MF CMakeFiles/mprpc.dir/logger.cc.o.d -o CMakeFiles/mprpc.dir/logger.cc.o -c /home/curry/myRPC/myRPC/src/logger.cc
 
 src/CMakeFiles/mprpc.dir/logger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/logger.cc.i"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/logger.cc > CMakeFiles/mprpc.dir/logger.cc.i
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/logger.cc > CMakeFiles/mprpc.dir/logger.cc.i
 
 src/CMakeFiles/mprpc.dir/logger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/logger.cc.s"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/logger.cc -o CMakeFiles/mprpc.dir/logger.cc.s
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/logger.cc -o CMakeFiles/mprpc.dir/logger.cc.s
 
 src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o: ../src/mprpcapplication.cc
 src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/curry/myRPC/myRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o -MF CMakeFiles/mprpc.dir/mprpcapplication.cc.o.d -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /home/curry/myRPC/myRPC/src/mprpcapplication.cc
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o -MF CMakeFiles/mprpc.dir/mprpcapplication.cc.o.d -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /home/curry/myRPC/myRPC/src/mprpcapplication.cc
 
 src/CMakeFiles/mprpc.dir/mprpcapplication.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpcapplication.cc.i"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/mprpcapplication.cc > CMakeFiles/mprpc.dir/mprpcapplication.cc.i
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/mprpcapplication.cc > CMakeFiles/mprpc.dir/mprpcapplication.cc.i
 
 src/CMakeFiles/mprpc.dir/mprpcapplication.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpcapplication.cc.s"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/mprpcapplication.cc -o CMakeFiles/mprpc.dir/mprpcapplication.cc.s
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/mprpcapplication.cc -o CMakeFiles/mprpc.dir/mprpcapplication.cc.s
 
 src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o: ../src/mprpcchannel.cc
 src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/curry/myRPC/myRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o -MF CMakeFiles/mprpc.dir/mprpcchannel.cc.o.d -o CMakeFiles/mprpc.dir/mprpcchannel.cc.o -c /home/curry/myRPC/myRPC/src/mprpcchannel.cc
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o -MF CMakeFiles/mprpc.dir/mprpcchannel.cc.o.d -o CMakeFiles/mprpc.dir/mprpcchannel.cc.o -c /home/curry/myRPC/myRPC/src/mprpcchannel.cc
 
 src/CMakeFiles/mprpc.dir/mprpcchannel.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpcchannel.cc.i"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/mprpcchannel.cc > CMakeFiles/mprpc.dir/mprpcchannel.cc.i
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/mprpcchannel.cc > CMakeFiles/mprpc.dir/mprpcchannel.cc.i
 
 src/CMakeFiles/mprpc.dir/mprpcchannel.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpcchannel.cc.s"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/mprpcchannel.cc -o CMakeFiles/mprpc.dir/mprpcchannel.cc.s
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/mprpcchannel.cc -o CMakeFiles/mprpc.dir/mprpcchannel.cc.s
 
 src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o: ../src/mprpcconfig.cc
 src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/curry/myRPC/myRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o -MF CMakeFiles/mprpc.dir/mprpcconfig.cc.o.d -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/curry/myRPC/myRPC/src/mprpcconfig.cc
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o -MF CMakeFiles/mprpc.dir/mprpcconfig.cc.o.d -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/curry/myRPC/myRPC/src/mprpcconfig.cc
 
 src/CMakeFiles/mprpc.dir/mprpcconfig.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpcconfig.cc.i"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/mprpcconfig.cc > CMakeFiles/mprpc.dir/mprpcconfig.cc.i
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/mprpcconfig.cc > CMakeFiles/mprpc.dir/mprpcconfig.cc.i
 
 src/CMakeFiles/mprpc.dir/mprpcconfig.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpcconfig.cc.s"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/mprpcconfig.cc -o CMakeFiles/mprpc.dir/mprpcconfig.cc.s
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/mprpcconfig.cc -o CMakeFiles/mprpc.dir/mprpcconfig.cc.s
 
 src/CMakeFiles/mprpc.dir/mprpccontroller.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpccontroller.cc.o: ../src/mprpccontroller.cc
 src/CMakeFiles/mprpc.dir/mprpccontroller.cc.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/curry/myRPC/myRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/mprpc.dir/mprpccontroller.cc.o"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpccontroller.cc.o -MF CMakeFiles/mprpc.dir/mprpccontroller.cc.o.d -o CMakeFiles/mprpc.dir/mprpccontroller.cc.o -c /home/curry/myRPC/myRPC/src/mprpccontroller.cc
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpccontroller.cc.o -MF CMakeFiles/mprpc.dir/mprpccontroller.cc.o.d -o CMakeFiles/mprpc.dir/mprpccontroller.cc.o -c /home/curry/myRPC/myRPC/src/mprpccontroller.cc
 
 src/CMakeFiles/mprpc.dir/mprpccontroller.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpccontroller.cc.i"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/mprpccontroller.cc > CMakeFiles/mprpc.dir/mprpccontroller.cc.i
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/mprpccontroller.cc > CMakeFiles/mprpc.dir/mprpccontroller.cc.i
 
 src/CMakeFiles/mprpc.dir/mprpccontroller.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpccontroller.cc.s"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/mprpccontroller.cc -o CMakeFiles/mprpc.dir/mprpccontroller.cc.s
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/mprpccontroller.cc -o CMakeFiles/mprpc.dir/mprpccontroller.cc.s
 
 src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o: ../src/rpcheader.pb.cc
 src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/curry/myRPC/myRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -MF CMakeFiles/mprpc.dir/rpcheader.pb.cc.o.d -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -c /home/curry/myRPC/myRPC/src/rpcheader.pb.cc
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -MF CMakeFiles/mprpc.dir/rpcheader.pb.cc.o.d -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -c /home/curry/myRPC/myRPC/src/rpcheader.pb.cc
 
 src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/rpcheader.pb.cc.i"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/rpcheader.pb.cc > CMakeFiles/mprpc.dir/rpcheader.pb.cc.i
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/rpcheader.pb.cc > CMakeFiles/mprpc.dir/rpcheader.pb.cc.i
 
 src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/rpcheader.pb.cc.s"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/rpcheader.pb.cc -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.s
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/rpcheader.pb.cc -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.s
 
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: ../src/rpcprovider.cc
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/curry/myRPC/myRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/mprpc.dir/rpcprovider.cc.o"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/rpcprovider.cc.o -MF CMakeFiles/mprpc.dir/rpcprovider.cc.o.d -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/curry/myRPC/myRPC/src/rpcprovider.cc
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/rpcprovider.cc.o -MF CMakeFiles/mprpc.dir/rpcprovider.cc.o.d -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/curry/myRPC/myRPC/src/rpcprovider.cc
 
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/rpcprovider.cc.i"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/rpcprovider.cc > CMakeFiles/mprpc.dir/rpcprovider.cc.i
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/rpcprovider.cc > CMakeFiles/mprpc.dir/rpcprovider.cc.i
 
 src/CMakeFiles/mprpc.dir/rpcprovider.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/rpcprovider.cc.s"
-	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/rpcprovider.cc -o CMakeFiles/mprpc.dir/rpcprovider.cc.s
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/rpcprovider.cc -o CMakeFiles/mprpc.dir/rpcprovider.cc.s
+
+src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o: src/CMakeFiles/mprpc.dir/flags.make
+src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o: ../src/zookeeperutil.cc
+src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/curry/myRPC/myRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o"
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o -MF CMakeFiles/mprpc.dir/zookeeperutil.cc.o.d -o CMakeFiles/mprpc.dir/zookeeperutil.cc.o -c /home/curry/myRPC/myRPC/src/zookeeperutil.cc
+
+src/CMakeFiles/mprpc.dir/zookeeperutil.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/zookeeperutil.cc.i"
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curry/myRPC/myRPC/src/zookeeperutil.cc > CMakeFiles/mprpc.dir/zookeeperutil.cc.i
+
+src/CMakeFiles/mprpc.dir/zookeeperutil.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/zookeeperutil.cc.s"
+	cd /home/curry/myRPC/myRPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curry/myRPC/myRPC/src/zookeeperutil.cc -o CMakeFiles/mprpc.dir/zookeeperutil.cc.s
 
 # Object files for target mprpc
 mprpc_OBJECTS = \
@@ -175,26 +189,28 @@ mprpc_OBJECTS = \
 "CMakeFiles/mprpc.dir/mprpcconfig.cc.o" \
 "CMakeFiles/mprpc.dir/mprpccontroller.cc.o" \
 "CMakeFiles/mprpc.dir/rpcheader.pb.cc.o" \
-"CMakeFiles/mprpc.dir/rpcprovider.cc.o"
+"CMakeFiles/mprpc.dir/rpcprovider.cc.o" \
+"CMakeFiles/mprpc.dir/zookeeperutil.cc.o"
 
 # External object files for target mprpc
 mprpc_EXTERNAL_OBJECTS =
 
-src/libmprpc.a: src/CMakeFiles/mprpc.dir/logger.cc.o
-src/libmprpc.a: src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o
-src/libmprpc.a: src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o
-src/libmprpc.a: src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o
-src/libmprpc.a: src/CMakeFiles/mprpc.dir/mprpccontroller.cc.o
-src/libmprpc.a: src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o
-src/libmprpc.a: src/CMakeFiles/mprpc.dir/rpcprovider.cc.o
-src/libmprpc.a: src/CMakeFiles/mprpc.dir/build.make
-src/libmprpc.a: src/CMakeFiles/mprpc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/curry/myRPC/myRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libmprpc.a"
+../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/logger.cc.o
+../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o
+../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o
+../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o
+../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/mprpccontroller.cc.o
+../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o
+../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/rpcprovider.cc.o
+../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o
+../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/build.make
+../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/curry/myRPC/myRPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library ../../lib/libmprpc.a"
 	cd /home/curry/myRPC/myRPC/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mprpc.dir/cmake_clean_target.cmake
 	cd /home/curry/myRPC/myRPC/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mprpc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-src/CMakeFiles/mprpc.dir/build: src/libmprpc.a
+src/CMakeFiles/mprpc.dir/build: ../lib/libmprpc.a
 .PHONY : src/CMakeFiles/mprpc.dir/build
 
 src/CMakeFiles/mprpc.dir/clean:
