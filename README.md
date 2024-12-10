@@ -30,6 +30,7 @@ boost，sudo apt-get install libboost-dev libboost-test-dev libboost-all-dev
 
 muduo，[https://blog.csdn.net/QIANGWEIYUAN/article/details/89023980](https://blog.csdn.net/QIANGWEIYUAN/article/details/89023980)
 
+zookeeper，[zookeeper](https://archive.apache.org/dist/zookeeper/zookeeper-3.4.9/) 
 # 项目结构
 bin：可执行文件和配置文件
 
