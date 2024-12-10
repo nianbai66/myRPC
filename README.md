@@ -1,10 +1,10 @@
 # myRPC
 # 介绍
-本项目是一个集群分布式网络通信框架，基于C++、protobuf、zookeeper、muduo库开发
+本项目是一个集群分布式网络通信框架，基于C++、Protobuf、Zookeeper、muduo库P开发
 
 直接运行autobuild.sh（已加上可执行权限）执行来生成可执行文件。
 
-成功生成后先启动zookeeper服务端，再进入bin目录，先启动服务器再启动客户端即可测试。
+成功生成后先启动Zookeeper服务端，再进入bin目录，先启动服务器再启动客户端即可测试。
 
 # 项目开发主要涉及
 RPC远程过程调用原理以及实现
@@ -24,7 +24,7 @@ CMake构建项目集成编译环境
 github管理项目
 
 # 库准备
-protoc，本地版本为3.12.4，ubuntu22使用`sudo apt-get install protobuf-compiler libprotobuf-dev`安装默认就是这个版本
+Protobuf，本地版本为3.12.4，ubuntu22使用`sudo apt-get install protobuf-compiler libprotobuf-dev`安装默认就是这个版本
 
 boost，sudo apt-get install libboost-dev libboost-test-dev libboost-all-dev
 
