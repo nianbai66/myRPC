@@ -1,6 +1,6 @@
 # myRPC
 # 介绍
-本项目是一个集群分布式网络通信框架，基于C++、Protobuf、Zookeeper、muduo库P开发
+本项目是一个集群分布式网络通信框架，基于C++、Protobuf、Zookeeper、muduo库开发
 
 直接运行autobuild.sh（已加上可执行权限）执行来生成可执行文件。
 
